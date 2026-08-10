@@ -1,0 +1,19 @@
+NEXTY CONTENT PLANNER v1.0.4 - HUMAN COPY UPDATE
+
+1. Stop npm run dev (Ctrl + C).
+2. Extract seluruh isi ZIP ini ke ROOT project nexty-content-planner dan izinkan overwrite file.
+3. Dari root project, jalankan:
+
+   powershell -ExecutionPolicy Bypass -File .\_APPLY_AFTER_EXTRACT.ps1
+
+4. Jalankan kembali:
+
+   npm run dev
+
+Tidak perlu npm install karena dependency tidak berubah.
+
+Update ini:
+- menghapus Campaign dari V1;
+- mengubah Content Pillar di UI menjadi Kategori Konten;
+- membuat Kategori Konten opsional;
+- merapikan copywriting seluruh aplikasi agar lebih mudah dipahami.

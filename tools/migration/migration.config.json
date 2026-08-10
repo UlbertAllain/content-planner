@@ -1,0 +1,5 @@
+{
+  "companyName": "Nexty Labs",
+  "allPlatforms": [],
+  "notes": "companyName menentukan perusahaan untuk seluruh data Excel lama. Isi allPlatforms karena Excel memakai nilai 'All', contoh: [\"Instagram\", \"TikTok\"]."
+}

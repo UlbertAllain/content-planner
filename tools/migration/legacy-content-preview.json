@@ -1,0 +1,720 @@
+{
+  "sourceFile": "CONTENT PLANNER NEXTY .xlsx",
+  "sourceRowsRead": 23,
+  "recordsAfterDeduplication": 20,
+  "duplicatesMerged": [
+    {
+      "topic": "Tarian Semut",
+      "kept": {
+        "sheet": "JULI",
+        "row": 4
+      },
+      "mergedSources": [
+        {
+          "sheet": "JUNI",
+          "row": 6
+        },
+        {
+          "sheet": "JULI",
+          "row": 4
+        }
+      ]
+    },
+    {
+      "topic": "sembah BA",
+      "kept": {
+        "sheet": "JULI",
+        "row": 5
+      },
+      "mergedSources": [
+        {
+          "sheet": "JUNI",
+          "row": 7
+        },
+        {
+          "sheet": "JULI",
+          "row": 5
+        }
+      ]
+    },
+    {
+      "topic": "Mitos atau faktaa",
+      "kept": {
+        "sheet": "JULI",
+        "row": 6
+      },
+      "mergedSources": [
+        {
+          "sheet": "JUNI",
+          "row": 8
+        },
+        {
+          "sheet": "JULI",
+          "row": 6
+        }
+      ]
+    }
+  ],
+  "records": [
+    {
+      "legacyImportKey": "legacy-050cd02d983eb7d5",
+      "sourceRows": [
+        {
+          "sheet": "JUNI",
+          "row": 4
+        }
+      ],
+      "date": "2026-06-28",
+      "picName": null,
+      "title": "Pre-rilis",
+      "categoryName": "Promosi",
+      "goalName": "Awareness",
+      "platformMode": "ALL",
+      "platformNames": [],
+      "formatName": "Feed",
+      "legacyStatus": "Concept",
+      "status": "PLANNED",
+      "referenceUrl": null,
+      "designUrl": null,
+      "designNote": null,
+      "caption": null,
+      "publishedUrl": null,
+      "evaluation": null,
+      "metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      }
+    },
+    {
+      "legacyImportKey": "legacy-9abea9bf5b332098",
+      "sourceRows": [
+        {
+          "sheet": "JUNI",
+          "row": 5
+        }
+      ],
+      "date": "2026-07-04",
+      "picName": null,
+      "title": "AI Automation",
+      "categoryName": "Promosi",
+      "goalName": "Awareness",
+      "platformMode": "NAMED",
+      "platformNames": [
+        "Instagram"
+      ],
+      "formatName": "Feed",
+      "legacyStatus": "Editing",
+      "status": "IN_PRODUCTION",
+      "referenceUrl": "https://www.instagram.com/p/DZ9MuiJBqT2/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      "designUrl": null,
+      "designNote": "photoshop",
+      "caption": "Kerjaan numpuk, chat pelanggan belum kebalas, data masih dicek manual, laporan juga belum kelar? 😵‍💫\n\nTenang Nexters, sekarang banyak proses bisnis yang bisa dibantu pakai AI Automation. Mulai dari auto chat, auto data, sampai auto workflow, semuanya bisa dibuat lebih cepat, rapi, dan efisien.\n\nJadi Nexters nggak perlu buang waktu buat kerjaan yang itu-itu aja. Fokus aja ke hal yang lebih penting: ngembangin bisnis dan ningkatin cuan 🚀\n\nSaatnya kerja lebih smart, bukan cuma lebih hard.\n\nMau bisnismu jadi lebih sat-set pakai AI? DM “AI” sekarang dan ngobrol bareng Nexty Labs! 🤖✨\n\n#NextyLabs #AIAutomation #BisnisDigital #Automation #DigitalSolution #SoftwareHouse #BisnisModern #UMKMGoDigital",
+      "publishedUrl": null,
+      "evaluation": null,
+      "metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      }
+    },
+    {
+      "legacyImportKey": "legacy-25136a45d828d430",
+      "sourceRows": [
+        {
+          "sheet": "JUNI",
+          "row": 6
+        },
+        {
+          "sheet": "JULI",
+          "row": 4
+        }
+      ],
+      "date": "2026-07-15",
+      "picName": null,
+      "title": "Tarian Semut",
+      "categoryName": "Promosi",
+      "goalName": "Awareness",
+      "platformMode": "NAMED",
+      "platformNames": [
+        "Instagram"
+      ],
+      "formatName": "Reels",
+      "legacyStatus": "Post",
+      "status": "PUBLISHED",
+      "referenceUrl": null,
+      "designUrl": null,
+      "designNote": null,
+      "caption": null,
+      "publishedUrl": null,
+      "evaluation": null,
+      "metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      }
+    },
+    {
+      "legacyImportKey": "legacy-b1e7c95f914ac1de",
+      "sourceRows": [
+        {
+          "sheet": "JUNI",
+          "row": 7
+        },
+        {
+          "sheet": "JULI",
+          "row": 5
+        }
+      ],
+      "date": "2026-07-16",
+      "picName": "Thea",
+      "title": "sembah BA",
+      "categoryName": "Promosi",
+      "goalName": "Conversation",
+      "platformMode": "NAMED",
+      "platformNames": [
+        "Instagram"
+      ],
+      "formatName": "Feed",
+      "legacyStatus": "Editing",
+      "status": "IN_PRODUCTION",
+      "referenceUrl": "https://www.instagram.com/p/DaKPjX_n1yZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      "designUrl": null,
+      "designNote": null,
+      "caption": null,
+      "publishedUrl": null,
+      "evaluation": null,
+      "metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      }
+    },
+    {
+      "legacyImportKey": "legacy-844add53d864f0f8",
+      "sourceRows": [
+        {
+          "sheet": "JUNI",
+          "row": 8
+        },
+        {
+          "sheet": "JULI",
+          "row": 6
+        }
+      ],
+      "date": "2026-07-17",
+      "picName": "Arva",
+      "title": "Mitos atau faktaa",
+      "categoryName": "Edukasi",
+      "goalName": "Consideration",
+      "platformMode": "NAMED",
+      "platformNames": [
+        "Instagram"
+      ],
+      "formatName": "Carousel",
+      "legacyStatus": "Post",
+      "status": "PUBLISHED",
+      "referenceUrl": "https://www.instagram.com/p/DamGu5CGu_I/?utm_source=ig_web_button_share_sheet&igsh=MzRlODBiNWFlZA==",
+      "designUrl": null,
+      "designNote": null,
+      "caption": null,
+      "publishedUrl": null,
+      "evaluation": null,
+      "metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      }
+    },
+    {
+      "legacyImportKey": "legacy-58117e24e4d0b8a9",
+      "sourceRows": [
+        {
+          "sheet": "JULI",
+          "row": 8
+        }
+      ],
+      "date": "2026-07-20",
+      "picName": null,
+      "title": "Meme",
+      "categoryName": "Promosi",
+      "goalName": "Awareness",
+      "platformMode": "NAMED",
+      "platformNames": [
+        "Instagram"
+      ],
+      "formatName": "Feed",
+      "legacyStatus": "Post",
+      "status": "PUBLISHED",
+      "referenceUrl": null,
+      "designUrl": null,
+      "designNote": null,
+      "caption": null,
+      "publishedUrl": null,
+      "evaluation": null,
+      "metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      }
+    },
+    {
+      "legacyImportKey": "legacy-5316a41668d37a31",
+      "sourceRows": [
+        {
+          "sheet": "JULI",
+          "row": 7
+        }
+      ],
+      "date": "2026-07-21",
+      "picName": null,
+      "title": "Tips and tricks",
+      "categoryName": "Edukasi",
+      "goalName": "Conversation",
+      "platformMode": "NAMED",
+      "platformNames": [
+        "Instagram"
+      ],
+      "formatName": "Carousel",
+      "legacyStatus": "Concept",
+      "status": "PLANNED",
+      "referenceUrl": "https://www.instagram.com/p/Dar7WbZIFjC/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      "designUrl": null,
+      "designNote": null,
+      "caption": null,
+      "publishedUrl": null,
+      "evaluation": null,
+      "metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      }
+    },
+    {
+      "legacyImportKey": "legacy-39c21516b4b19b0a",
+      "sourceRows": [
+        {
+          "sheet": "JUNI",
+          "row": 9
+        }
+      ],
+      "date": "2026-07-24",
+      "picName": null,
+      "title": null,
+      "categoryName": null,
+      "goalName": null,
+      "platformMode": "NAMED",
+      "platformNames": [
+        "Instagram"
+      ],
+      "formatName": null,
+      "legacyStatus": null,
+      "status": "PLANNED",
+      "referenceUrl": null,
+      "designUrl": null,
+      "designNote": null,
+      "caption": null,
+      "publishedUrl": null,
+      "evaluation": null,
+      "metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      }
+    },
+    {
+      "legacyImportKey": "legacy-195c58d872145a89",
+      "sourceRows": [
+        {
+          "sheet": "JULI",
+          "row": 9
+        }
+      ],
+      "date": "2026-07-24",
+      "picName": "Arva",
+      "title": "Spill Layanan",
+      "categoryName": "Promosi",
+      "goalName": "Conversation",
+      "platformMode": "NAMED",
+      "platformNames": [
+        "Instagram"
+      ],
+      "formatName": "Carousel",
+      "legacyStatus": "Scripting",
+      "status": "IN_PRODUCTION",
+      "referenceUrl": "https://www.instagram.com/p/DbC-DfYES3G/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      "designUrl": null,
+      "designNote": null,
+      "caption": null,
+      "publishedUrl": null,
+      "evaluation": null,
+      "metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      }
+    },
+    {
+      "legacyImportKey": "legacy-f9acf1fc6895ddfa",
+      "sourceRows": [
+        {
+          "sheet": "AGUSTUS",
+          "row": 4
+        }
+      ],
+      "date": "2026-08-01",
+      "picName": "Afiq",
+      "title": "Desain",
+      "categoryName": "Promosi",
+      "goalName": "Awareness",
+      "platformMode": "ALL",
+      "platformNames": [],
+      "formatName": "Reels",
+      "legacyStatus": "Post",
+      "status": "PUBLISHED",
+      "referenceUrl": null,
+      "designUrl": null,
+      "designNote": null,
+      "caption": null,
+      "publishedUrl": "https://www.instagram.com/p/Dbilekqnd1J/?igsh=MTFiMGZqdW5reWRzbQ==",
+      "evaluation": null,
+      "metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      }
+    },
+    {
+      "legacyImportKey": "legacy-b7191e69f0370539",
+      "sourceRows": [
+        {
+          "sheet": "AGUSTUS",
+          "row": 5
+        }
+      ],
+      "date": "2026-08-02",
+      "picName": "Ebtra",
+      "title": "Tips MinNext",
+      "categoryName": "Edukasi",
+      "goalName": "Awareness",
+      "platformMode": "NAMED",
+      "platformNames": [
+        "Instagram"
+      ],
+      "formatName": "Carousel",
+      "legacyStatus": "Post",
+      "status": "PUBLISHED",
+      "referenceUrl": null,
+      "designUrl": "https://canva.link/lgzoujox50nibjk",
+      "designNote": null,
+      "caption": "Pernah sadar nggak, Nexters? ...",
+      "publishedUrl": null,
+      "evaluation": null,
+      "metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      }
+    },
+    {
+      "legacyImportKey": "legacy-d3e511482357b6f1",
+      "sourceRows": [
+        {
+          "sheet": "AGUSTUS",
+          "row": 6
+        }
+      ],
+      "date": "2026-08-03",
+      "picName": "Arva",
+      "title": "Promosi Instagram",
+      "categoryName": "Promosi",
+      "goalName": "Awareness",
+      "platformMode": "ALL",
+      "platformNames": [],
+      "formatName": "Reels",
+      "legacyStatus": "Post",
+      "status": "PUBLISHED",
+      "referenceUrl": "https://www.instagram.com/reel/DYCSZNaS_Xw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      "designUrl": null,
+      "designNote": null,
+      "caption": "POV : Ada yang minta Instagram, tapi yang kita butuhin customer bukan gebetan",
+      "publishedUrl": "https://www.instagram.com/reel/DblPXF-xB-5/?igsh=ZjdwZzRwbTdvYW9q",
+      "evaluation": null,
+      "metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      }
+    },
+    {
+      "legacyImportKey": "legacy-2025a3350cf3b5af",
+      "sourceRows": [
+        {
+          "sheet": "AGUSTUS",
+          "row": 7
+        }
+      ],
+      "date": "2026-08-04",
+      "picName": "Thea",
+      "title": "branding menurut para filsuf",
+      "categoryName": "Edukasi",
+      "goalName": "Conversation",
+      "platformMode": "NAMED",
+      "platformNames": [
+        "Instagram"
+      ],
+      "formatName": "Carousel",
+      "legacyStatus": "Post",
+      "status": "PUBLISHED",
+      "referenceUrl": null,
+      "designUrl": null,
+      "designNote": null,
+      "caption": null,
+      "publishedUrl": null,
+      "evaluation": null,
+      "metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      }
+    },
+    {
+      "legacyImportKey": "legacy-4bf5aa7443d27982",
+      "sourceRows": [
+        {
+          "sheet": "AGUSTUS",
+          "row": 8
+        }
+      ],
+      "date": "2026-08-05",
+      "picName": "Afiq",
+      "title": null,
+      "categoryName": "Promosi",
+      "goalName": "Awareness",
+      "platformMode": "ALL",
+      "platformNames": [],
+      "formatName": "Reels",
+      "legacyStatus": "Concept",
+      "status": "PLANNED",
+      "referenceUrl": null,
+      "designUrl": null,
+      "designNote": null,
+      "caption": null,
+      "publishedUrl": null,
+      "evaluation": null,
+      "metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      }
+    },
+    {
+      "legacyImportKey": "legacy-368f976940775c71",
+      "sourceRows": [
+        {
+          "sheet": "AGUSTUS",
+          "row": 9
+        }
+      ],
+      "date": "2026-08-06",
+      "picName": "Ebtra",
+      "title": "Spiderman",
+      "categoryName": "Promosi",
+      "goalName": "Consideration",
+      "platformMode": "NAMED",
+      "platformNames": [
+        "Instagram"
+      ],
+      "formatName": "Carousel",
+      "legacyStatus": "Post",
+      "status": "PUBLISHED",
+      "referenceUrl": null,
+      "designUrl": "https://canva.link/iw4fejggso8dcx2",
+      "designNote": null,
+      "caption": "Nexters, slide dulu nggak sih ...",
+      "publishedUrl": null,
+      "evaluation": null,
+      "metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      }
+    },
+    {
+      "legacyImportKey": "legacy-d63493db94423b94",
+      "sourceRows": [
+        {
+          "sheet": "AGUSTUS",
+          "row": 10
+        }
+      ],
+      "date": "2026-08-07",
+      "picName": "Arva",
+      "title": "atmin",
+      "categoryName": "Testimoni",
+      "goalName": "Awareness",
+      "platformMode": "ALL",
+      "platformNames": [],
+      "formatName": "Reels",
+      "legacyStatus": "Editing",
+      "status": "IN_PRODUCTION",
+      "referenceUrl": "https://www.instagram.com/reel/DXGzWNqBFEP/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      "designUrl": null,
+      "designNote": null,
+      "caption": "Secepat apa admin merespon",
+      "publishedUrl": null,
+      "evaluation": null,
+      "metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      }
+    },
+    {
+      "legacyImportKey": "legacy-c2c09c19d996126f",
+      "sourceRows": [
+        {
+          "sheet": "AGUSTUS",
+          "row": 11
+        }
+      ],
+      "date": "2026-08-08",
+      "picName": "Thea",
+      "title": null,
+      "categoryName": null,
+      "goalName": null,
+      "platformMode": "NAMED",
+      "platformNames": [
+        "Instagram"
+      ],
+      "formatName": null,
+      "legacyStatus": null,
+      "status": "PLANNED",
+      "referenceUrl": null,
+      "designUrl": null,
+      "designNote": null,
+      "caption": null,
+      "publishedUrl": null,
+      "evaluation": null,
+      "metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      }
+    },
+    {
+      "legacyImportKey": "legacy-8fc65fa8fb6ed1ac",
+      "sourceRows": [
+        {
+          "sheet": "AGUSTUS",
+          "row": 12
+        }
+      ],
+      "date": "2026-08-09",
+      "picName": "Afiq",
+      "title": null,
+      "categoryName": "Testimoni",
+      "goalName": "Awareness",
+      "platformMode": "ALL",
+      "platformNames": [],
+      "formatName": "Reels",
+      "legacyStatus": "Concept",
+      "status": "PLANNED",
+      "referenceUrl": null,
+      "designUrl": null,
+      "designNote": null,
+      "caption": null,
+      "publishedUrl": null,
+      "evaluation": null,
+      "metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      }
+    },
+    {
+      "legacyImportKey": "legacy-52c6a88128ea6c0b",
+      "sourceRows": [
+        {
+          "sheet": "AGUSTUS",
+          "row": 13
+        }
+      ],
+      "date": "2026-08-10",
+      "picName": "Ebtra",
+      "title": "SEMENIT BARENG MINNEXT",
+      "categoryName": "Promosi",
+      "goalName": "Consideration",
+      "platformMode": "NAMED",
+      "platformNames": [
+        "Instagram"
+      ],
+      "formatName": "Feed",
+      "legacyStatus": "Concept",
+      "status": "PLANNED",
+      "referenceUrl": null,
+      "designUrl": "https://canva.link/jtoz409p9zc920m",
+      "designNote": null,
+      "caption": "Gimana nih, Nexters?",
+      "publishedUrl": null,
+      "evaluation": null,
+      "metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      }
+    },
+    {
+      "legacyImportKey": "legacy-74c42d06dd281c3f",
+      "sourceRows": [
+        {
+          "sheet": "JULI",
+          "row": 10
+        }
+      ],
+      "date": null,
+      "picName": "Arva",
+      "title": "Branding",
+      "categoryName": "Promosi",
+      "goalName": "Awareness",
+      "platformMode": "NAMED",
+      "platformNames": [
+        "Instagram"
+      ],
+      "formatName": "Feed",
+      "legacyStatus": "Concept",
+      "status": "IDEA",
+      "referenceUrl": null,
+      "designUrl": "https://canva.link/ozszyjptjow8irh",
+      "designNote": null,
+      "caption": null,
+      "publishedUrl": null,
+      "evaluation": null,
+      "metrics": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null
+      }
+    }
+  ]
+}
