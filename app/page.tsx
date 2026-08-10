@@ -1,9 +1,7 @@
-import Link from "next/link";
-import { getCurrentUser } from "@/lib/auth/session";
 import { listCompanies } from "@/features/master-data/repository";
 
 export default async function HomePage({ searchParams }: { searchParams: Promise<{ sent?: string; error?: string }> }) {
-  const [user, companies, params] = await Promise.all([getCurrentUser(), listCompanies(true), searchParams]);
+  const [companies, params] = await Promise.all([listCompanies(true), searchParams]);
   const sent = params.sent === "1";
   const rateLimited = params.error === "rate";
   const invalid = params.error === "invalid";
@@ -15,9 +13,6 @@ export default async function HomePage({ searchParams }: { searchParams: Promise
           <p className="text-xs font-semibold tracking-[0.18em] text-blue-600">NEXTY CONTENT</p>
           <h1 className="mt-4 text-4xl font-semibold tracking-[-0.045em] text-slate-950 sm:text-5xl">Punya ide konten? Kirim aja.</h1>
           <p className="mt-5 text-base leading-7 text-slate-600">Ide sederhana pun boleh. Pilih perusahaan yang kamu maksud, tulis topiknya, lalu tim Media akan mempertimbangkannya untuk content plan berikutnya.</p>
-          <div className="mt-7 flex flex-wrap gap-3">
-            <Link href={user ? "/dashboard" : "/login"} className="btn-secondary">{user ? "Buka ruang kerja" : "Masuk Tim Media"}</Link>
-          </div>
         </section>
 
         <section className="card-pad p-5 sm:p-7">
