@@ -5,7 +5,11 @@ import { formatContentSchedule } from "@/lib/utils/date";
 
 export function ContentCard({ content, companyName, ownerName }: { content: Content; companyName?: string; ownerName?: string }) {
   return (
-    <Link href={`/contents/${content.id}`} className="block rounded-xl border border-slate-200 bg-white p-3.5 transition hover:border-slate-300 hover:shadow-sm">
+    <Link
+      href={`/contents/${content.id}`}
+      prefetch={false}
+      className="render-lazy block touch-manipulation rounded-xl border border-slate-200 bg-white p-3.5 transition-colors hover:border-slate-300"
+    >
       <p className="text-[11px] font-semibold uppercase tracking-[0.08em] text-blue-600">{companyName || "Perusahaan belum dipilih"}</p>
       <div className="mt-1 flex items-start justify-between gap-3">
         <p className="text-sm font-semibold leading-5 text-slate-900">{content.title || "Topik belum ditentukan"}</p>

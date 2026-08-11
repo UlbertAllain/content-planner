@@ -10,6 +10,11 @@ function externalHost(url: string) {
   }
 }
 
+function cloudinaryPreviewUrl(url: string) {
+  if (!url.includes("res.cloudinary.com") || !url.includes("/upload/")) return url;
+  return url.replace("/upload/", "/upload/f_auto,q_auto:eco,w_900,c_limit/");
+}
+
 function FileInfo({ asset }: { asset: ContentAsset }) {
   const size = asset.bytes && asset.bytes > 0
     ? asset.bytes >= 1024 * 1024
@@ -40,9 +45,10 @@ export function AssetPreviewCard({
 }) {
   const isImage = asset.source === "CLOUDINARY" && asset.resourceType === "IMAGE";
   const isVideo = asset.source === "CLOUDINARY" && asset.resourceType === "VIDEO";
+  const previewUrl = isImage ? cloudinaryPreviewUrl(asset.url) : asset.url;
 
   return (
-    <article className="overflow-hidden rounded-2xl border border-slate-200 bg-white">
+    <article className="render-lazy overflow-hidden rounded-2xl border border-slate-200 bg-white">
       {isImage ? (
         <a
           href={asset.url}
@@ -51,12 +57,14 @@ export function AssetPreviewCard({
           className="group block border-b border-slate-100 bg-slate-50"
           aria-label={`Buka ${asset.label} dalam ukuran penuh`}
         >
-          <div className="flex min-h-56 items-center justify-center p-2 sm:min-h-64">
+          <div className="flex min-h-48 items-center justify-center p-2 sm:min-h-64">
             <img
-              src={asset.url}
+              src={previewUrl}
               alt={asset.label}
               loading="lazy"
-              className="max-h-[520px] w-full rounded-xl object-contain transition duration-200 group-hover:scale-[1.01]"
+              decoding="async"
+              fetchPriority="low"
+              className="max-h-[520px] w-full rounded-xl object-contain"
             />
           </div>
         </a>
@@ -68,7 +76,7 @@ export function AssetPreviewCard({
             src={asset.url}
             controls
             playsInline
-            preload="metadata"
+            preload="none"
             className="max-h-[520px] w-full"
           >
             Browser kamu belum mendukung preview video.
@@ -81,7 +89,7 @@ export function AssetPreviewCard({
           href={asset.url}
           target="_blank"
           rel="noreferrer"
-          className="flex min-h-32 items-center justify-between gap-4 border-b border-slate-100 bg-slate-50 p-5 transition hover:bg-slate-100"
+          className="flex min-h-32 touch-manipulation items-center justify-between gap-4 border-b border-slate-100 bg-slate-50 p-5 transition-colors hover:bg-slate-100"
         >
           <div className="min-w-0">
             <p className="text-xs font-semibold uppercase tracking-[0.12em] text-slate-400">
@@ -90,9 +98,7 @@ export function AssetPreviewCard({
             <p className="mt-2 truncate text-sm font-semibold text-slate-800">{asset.label}</p>
             <p className="mt-1 text-xs text-slate-500">Klik untuk membuka tautan</p>
           </div>
-          <span className="shrink-0 rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-semibold text-slate-600">
-            Buka
-          </span>
+          <span className="shrink-0 rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-semibold text-slate-600">Buka</span>
         </a>
       ) : null}
 
@@ -104,16 +110,14 @@ export function AssetPreviewCard({
               href={asset.url}
               target="_blank"
               rel="noreferrer"
-              className="rounded-lg px-2.5 py-1.5 text-xs font-semibold text-blue-600 transition hover:bg-blue-50"
+              className="touch-manipulation rounded-lg px-2.5 py-1.5 text-xs font-semibold text-blue-600 transition-colors hover:bg-blue-50"
             >
               Buka penuh
             </a>
           ) : null}
           {editable ? (
             <form action={deleteAssetAction.bind(null, contentId, asset.id)}>
-              <button className="rounded-lg px-2.5 py-1.5 text-xs font-semibold text-red-600 transition hover:bg-red-50">
-                Hapus
-              </button>
+              <button className="touch-manipulation rounded-lg px-2.5 py-1.5 text-xs font-semibold text-red-600 transition-colors hover:bg-red-50">Hapus</button>
             </form>
           ) : null}
         </div>
