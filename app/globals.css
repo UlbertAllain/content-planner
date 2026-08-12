@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
 :root {
   --background: #f6f7f9;
@@ -136,3 +137,249 @@ a {
     @apply text-sm text-slate-500;
   }
 }
+/* NEXTY_THEME_V2_START */
+
+/*
+  Dark theme v2
+  ------------------------------------------------------------
+  Arah warna:
+  - graphite / charcoal, bukan navy hitam
+  - kontras teks diturunkan agar tidak menusuk mata
+  - biru dibuat desaturated supaya tetap terasa profesional
+  - elevation dibedakan tipis lewat surface, bukan kontras ekstrem
+*/
+
+.dark {
+  --background: #17191d;
+  --surface: #1f2226;
+  --foreground: #e7e9ec;
+  --muted: #9aa1ab;
+  --line: #32373e;
+
+  --brand: #89a7d8;
+  --brand-soft: #283345;
+
+  --danger: #d99a9a;
+  --warning: #d7b27c;
+  --success: #8fc1a8;
+
+  color-scheme: dark;
+}
+
+.dark html,
+.dark body,
+html.dark,
+html.dark body {
+  background: #17191d;
+  color: #e7e9ec;
+}
+
+html,
+body {
+  transition:
+    background-color 160ms ease,
+    color 160ms ease;
+}
+
+/* ---------- Neutral surfaces ---------- */
+
+.dark [class~="bg-white"] {
+  background-color: #1f2226;
+}
+
+.dark [class~="bg-white/95"],
+.dark [class~="bg-white/90"],
+.dark [class~="bg-white/80"] {
+  background-color: rgb(31 34 38 / 0.95);
+}
+
+.dark [class~="bg-slate-50"],
+.dark [class~="bg-slate-50/70"],
+.dark [class~="bg-slate-50/50"] {
+  background-color: #1b1e22;
+}
+
+.dark [class~="bg-slate-100"] {
+  background-color: #272b30;
+}
+
+.dark [class~="bg-slate-200"] {
+  background-color: #30353c;
+}
+
+/* ---------- Typography ---------- */
+
+.dark [class~="text-slate-950"],
+.dark [class~="text-slate-900"] {
+  color: #eceef2;
+}
+
+.dark [class~="text-slate-800"] {
+  color: #e0e3e7;
+}
+
+.dark [class~="text-slate-700"] {
+  color: #c8cdd4;
+}
+
+.dark [class~="text-slate-600"] {
+  color: #afb6c0;
+}
+
+.dark [class~="text-slate-500"] {
+  color: #969ea9;
+}
+
+.dark [class~="text-slate-400"] {
+  color: #7f8894;
+}
+
+.dark [class~="text-slate-300"] {
+  color: #68727f;
+}
+
+/* ---------- Borders / dividers ---------- */
+
+.dark [class~="border-slate-100"],
+.dark [class~="border-slate-200"],
+.dark [class~="border-slate-200/90"],
+.dark [class~="border-slate-300"] {
+  border-color: #32373e;
+}
+
+.dark [class~="divide-slate-100"] > :not(:last-child),
+.dark [class~="divide-slate-200"] > :not(:last-child) {
+  border-color: #32373e;
+}
+
+/* ---------- Calm blue accent ---------- */
+
+.dark [class~="text-blue-600"] {
+  color: #89a7d8;
+}
+
+.dark [class~="text-blue-700"] {
+  color: #a9bee0;
+}
+
+.dark [class~="bg-blue-50"] {
+  background-color: #283345;
+}
+
+.dark [class~="bg-blue-100"] {
+  background-color: #303d52;
+}
+
+/* ---------- Status colors, intentionally muted ---------- */
+
+.dark [class~="bg-indigo-50"] {
+  background-color: #292a3b;
+}
+
+.dark [class~="text-indigo-700"] {
+  color: #b9b7df;
+}
+
+.dark [class~="bg-emerald-50"] {
+  background-color: #22342d;
+}
+
+.dark [class~="text-emerald-700"] {
+  color: #91c7ad;
+}
+
+.dark [class~="bg-violet-50"] {
+  background-color: #30293a;
+}
+
+.dark [class~="text-violet-700"] {
+  color: #c2aed9;
+}
+
+.dark [class~="bg-green-50"] {
+  background-color: #253329;
+}
+
+.dark [class~="text-green-700"] {
+  color: #9bc4a3;
+}
+
+.dark [class~="bg-red-50"] {
+  background-color: #382829;
+}
+
+.dark [class~="text-red-700"] {
+  color: #dfa0a0;
+}
+
+/* ---------- Hover states ---------- */
+
+.dark [class~="hover:bg-slate-50"]:hover,
+.dark [class~="hover:bg-slate-100"]:hover {
+  background-color: #292d32;
+}
+
+.dark [class~="hover:text-slate-950"]:hover,
+.dark [class~="hover:text-slate-900"]:hover {
+  color: #f0f1f3;
+}
+
+/* ---------- Existing shared components ---------- */
+
+.dark .card,
+.dark .card-pad {
+  border-color: #32373e;
+  background: #1f2226;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.14);
+}
+
+.dark .btn-secondary {
+  border-color: #343940;
+  background: #24272c;
+  color: #cbd0d6;
+}
+
+.dark .btn-secondary:hover {
+  background: #2b2f35;
+  color: #eceef2;
+}
+
+.dark .field {
+  border-color: #343940;
+  background: #1b1e22;
+  color: #e3e5e8;
+}
+
+.dark .field::placeholder {
+  color: #737c88;
+}
+
+.dark .field:focus {
+  border-color: #708fc3;
+  --tw-ring-color: rgb(112 143 195 / 0.16);
+}
+
+.dark .label {
+  color: #c8cdd4;
+}
+
+.dark .section-title {
+  color: #e7e9ec;
+}
+
+.dark .muted {
+  color: #969ea9;
+}
+
+.dark input,
+.dark textarea,
+.dark select {
+  color-scheme: dark;
+}
+
+.dark ::selection {
+  background: #3b4c68;
+  color: #f3f4f6;
+}
+
+/* NEXTY_THEME_V2_END */
