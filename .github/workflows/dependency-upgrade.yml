@@ -1,0 +1,54 @@
+name: Dependency Upgrade
+
+on:
+  push:
+    branches:
+      - "refactor/repository-standardization"
+    paths:
+      - ".github/workflows/dependency-upgrade.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  upgrade:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+        with:
+          ref: refactor/repository-standardization
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install current lockfile
+        run: npm ci
+
+      - name: Upgrade reviewed direct dependencies
+        run: npm install --save-exact next@16.3.6 eslint-config-next@16.3.6 firebase-admin@14.4.0
+
+      - name: Refresh compatible transitive fixes
+        run: npm audit fix --package-lock-only || true
+
+      - name: Verify lockfile
+        run: npm ci
+
+      - name: Commit dependency update
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add package.json package-lock.json
+          if git diff --cached --quiet; then
+            echo "No dependency changes."
+            exit 0
+          fi
+          git commit -m "security: upgrade vulnerable dependencies"
+          git push origin HEAD:refactor/repository-standardization
