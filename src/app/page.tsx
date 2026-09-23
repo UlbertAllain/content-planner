@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import { listCompanies } from "@/features/master-data/repository";
 
 export default async function HomePage({ searchParams }: { searchParams: Promise<{ sent?: string; error?: string }> }) {

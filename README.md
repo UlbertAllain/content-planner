@@ -106,23 +106,23 @@ publicIdeaRateLimits
 ## Struktur source
 
 ```text
-app/
-  (auth)/
-  (workspace)/
-  api/public/ideas/
-  api/cloudinary/
+src/
+  app/
+    (auth)/
+    (workspace)/
+    api/public/ideas/
+    api/cloudinary/
+  components/
+  features/
+    users/
+    ideas/
+    contents/
+    assets/
+    comments/
+    activities/
+    master-data/
+  lib/
 
-components/
-features/
-  users/
-  ideas/
-  contents/
-  assets/
-  comments/
-  activities/
-  master-data/
-
-lib/
 tools/migration/
 ```
 
@@ -231,9 +231,7 @@ npm run dev
 ## 8. Validasi sebelum deploy
 
 ```powershell
-npm run typecheck
-npm run lint
-npm run build
+npm run check
 ```
 
 # Migrasi Excel lama
