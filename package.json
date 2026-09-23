@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
-    "migrate:legacy": "node tools/migration/import-legacy-content.mjs"
+    "migrate:legacy": "node tools/migration/import-legacy-content.mjs",
+    "check": "npm run lint && npm run typecheck && npm run build"
   },
   "dependencies": {
     "cloudinary": "2.10.0",
